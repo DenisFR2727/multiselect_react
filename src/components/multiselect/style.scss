@@ -1,0 +1,95 @@
+.select__multiselect {
+  .select__search {
+    position: relative;
+    z-index: 9999;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid grey;
+    padding: 15px 10px;
+    margin-top: 20px;
+    height: auto;
+    flex-wrap: wrap;
+
+    .selet__list {
+      width: 320px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      .faCircleXmark {
+        cursor: pointer;
+      }
+      .selet__option {
+        width: 100%;
+        max-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0096fb;
+        padding: 5px;
+        border-radius: 5px;
+        color: aliceblue;
+        gap: 5px;
+      }
+    }
+
+    input {
+      width: 250px;
+      height: 100%;
+      border: none;
+      outline: none;
+      line-height: 1.5;
+      font-size: 20px;
+    }
+    input:focus {
+      caret-shape: 20px;
+    }
+    input::placeholder {
+      padding: 20px;
+      font-size: 18px;
+    }
+    .faSortDown {
+      cursor: pointer;
+      position: relative;
+      width: 20px;
+      height: 20px;
+
+      path {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-25%);
+      }
+    }
+  }
+  ul {
+    position: relative;
+    top: 2px;
+    z-index: 9999;
+    list-style: none;
+    border: 1px solid grey;
+
+    .select__no-options {
+      display: inline-block;
+      padding: 10px;
+    }
+    li {
+      list-style: none;
+      padding: 15px 10px;
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    li:first-of-type {
+      background-color: red;
+      color: aliceblue;
+    }
+    li:hover {
+      background-color: red;
+      color: aliceblue;
+      font-weight: 600;
+    }
+  }
+}
